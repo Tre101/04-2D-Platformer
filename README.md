@@ -1,20 +1,49 @@
-# 2D-Platformer-Character
+# 04-2D-Platformer
+Project for MSCH-C220 3/21/2022
 
-A somewhat-generic character (including animations and state machine) appropriate for a 2D platformer built in Godot. Includes test level.
+A simple 2D Platformer Game with different features.
 
 ## Implementation
-Built using Godot 3.2.3
+Multiple Levels
 
-The player sprite is adaptated from [MV Platformer Male](https://opengameart.org/content/mv-platformer-male-32x64) by MoikMellah. CC0 Licensed.
+UI with health bar and a timer
+
+Menu, End Game, and Lose Screen Enchanced
+
+Parallax Background 
+
+Music
+
+Large Levels
 
 ## References
-None
+https://kenney.nl/assets/scribble-platformer
+
+https://kenney.nl/assets/pixel-line-platformer
+
+https://fontmeme.com/fonts/trailer-park-girl-font/
+
+https://opengameart.org/content/cat-fighter-sprite-sheet 
+
+https://opengameart.org/content/3-parallax-backgrounds 
+
+https://opengameart.org/content/background-for-games-2
+
+https://opengameart.org/content/fortress-backgroundstoryboard-image
+
+https://patrickdearteaga.com/royalty-free-music/childs-nightmare/ (Childs Nightmare)
+
+https://patrickdearteaga.com/arcade-music/ (Dreaming)
+
 
 ## Future Development
-None
+Adding Sound Effects
 
-## Extra Credit
-None
+More Juiciess
 
-## Created by 
-Jason Francis
+Special Attacks
+
+Boss Fight Level
+
+## Created by
+Tre'Vell Porter
