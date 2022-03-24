@@ -267,19 +267,19 @@ script = ExtResource( 2 )
 [node name="Enemies" type="Node2D" parent="."]
 script = ExtResource( 13 )
 
-[node name="Enemy2" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Enemy2" parent="Enemies" groups=["persist"] instance=ExtResource( 4 )]
 
-[node name="Enemy3" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Enemy3" parent="Enemies" groups=["persist"] instance=ExtResource( 4 )]
 position = Vector2( 856, 544 )
 constraint_left = Vector2( 856, 544 )
 constraint_right = Vector2( 1256, 544 )
 
-[node name="Enemy4" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Enemy4" parent="Enemies" groups=["persist"] instance=ExtResource( 4 )]
 position = Vector2( 3240, -96 )
 constraint_left = Vector2( 2712, -96 )
 constraint_right = Vector2( 3240, -96 )
 
-[node name="Enemy5" parent="Enemies" instance=ExtResource( 4 )]
+[node name="Enemy5" parent="Enemies" groups=["persist"] instance=ExtResource( 4 )]
 position = Vector2( 1752, 544 )
 constraint_left = Vector2( 1752, 544 )
 constraint_right = Vector2( 1960, 544 )

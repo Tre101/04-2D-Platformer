@@ -9,6 +9,15 @@ export var damage = 10
 func _ready():
 	pass
 
+func save():
+	var save_dict = {
+		"filename" : get_filename(),
+		"parent" : get_parent().get_path(),
+		"pos_x" : position.x,
+		"pos_y" : position.y,
+	}
+	return save_dict
+
 func _physics_process(_delta):
 	if not $Tween.is_active():
 		var constraint = constraint_left
