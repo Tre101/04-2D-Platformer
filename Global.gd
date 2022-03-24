@@ -59,11 +59,7 @@ func save_game():
 		save_game.store_line(to_json(node_data))
 	save_game.close()
 
-func load_data():
-	var save_game = File.new()
-	save_game.open_encrypted_with_pass(save_file, File.READ, key)	
-	
-	parse_json(save_game.get_line())
+func load_data(save_game):
 	increase_score(0)
 	
 	var save_nodes = get_tree().get_nodes_in_group("persist")
@@ -80,8 +76,8 @@ func load_data():
 			if i == "filename" or i == "parent" or i == "pos_x" or i == "pos_y":
 				continue
 			new_object.set(i, node_data[i])
-		save_game.close()
-		get_tree().paused = false
+	save_game.close()
+	get_tree().paused = false
 
 func load_game():
 	var save_game = File.new()
@@ -89,10 +85,9 @@ func load_game():
 		return
 	save_game.open_encrypted_with_pass(save_file, File.READ, key)	
 	save_data = parse_json(save_game.get_line())
-	save_game.close()
 	
 	var _scene = get_tree().change_scene_to(levels[save_data["level"]-1])
-	call_deferred("load_data")
+	call_deferred("load_data", save_game)
 	
 	
 	
